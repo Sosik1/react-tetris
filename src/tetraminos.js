@@ -42,9 +42,9 @@ export const TETROMINOS = {
   },
   T: {
     shape: [
-      [0, 0, 0],
       ["T", "T", "T"],
       [0, "T", 0],
+      [0, 0, 0],
     ],
     color: "132, 61, 198",
   },
@@ -64,3 +64,5 @@ export const randomTetromino = () => {
     tetrominos[Math.floor(Math.random() * tetrominos.length)];
   return TETROMINOS[randTetromino];
 };
+
+console.log(randomTetromino());
