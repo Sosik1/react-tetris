@@ -41,6 +41,9 @@ const Tetris = () => {
     resetPlayer();
     setGameOver(false);
     setDropTime(1000);
+    setLevel(0);
+    setRows(0);
+    setScore(0);
   };
 
   const drop = () => {
